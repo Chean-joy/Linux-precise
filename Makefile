@@ -32,3 +32,25 @@ rwlock_hungry_solved:rwlock_hungry_solved.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+condition_var:condition_var.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+unnamed_sem_bin_process:unnamed_sem_bin_process.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+thread_pool_test:thread_pool_test.c
+	-$(CC) -o $@ $^ `pkg-config --cflags --libs glib-2.0`
+	-./$@
+	-rm ./$@
+
+unnamed_sem_count_thread:unnamed_sem_count_thread.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+named_sem_bin_process:named_sem_bin_process.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
