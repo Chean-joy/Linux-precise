@@ -54,3 +54,12 @@ named_sem_bin_process:named_sem_bin_process.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+Pthread_create_test:Pthread_create_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+Phread_mutex:Phread_mutex.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
